@@ -1,33 +1,17 @@
-**1. Clone wallet sources**
+# Ooze - TurtleCoin GUI Wallet
+## by Rocksteady
 
-```
-git clone https://github.com/cryptonotefoundation/cryptonotewallet.git
-```
+![image](https://user-images.githubusercontent.com/34389545/34636662-6dfb201a-f26c-11e7-903b-f615b4799a59.png)
 
-**2. Modify `CryptoNoteWallet.cmake`**
- 
-```
-set(CN_PROJECT_NAME "furiouscoin")
-set(CN_CURRENCY_DISPLAY_NAME "FuriousCoin")
-set(CN_CURRENCY_TICKER "XFC")
-```
 
-**3. Set symbolic link to coin sources at the same level as `src`. For example:**
-
-```
-ln -s ../cryptonote cryptonote
-```
-
-Alternative way is to create git submodule:
-
-```
-git submodule add https://github.com/cryptonotefoundation/cryptonote.git cryptonote
-```
-
-Replace URL with git remote repository of your coin.
-
-**4. Build**
-
-```
-mkdir build && cd build && cmake .. && make
-```
+## Building
+#### Ubuntu 16.04 LTS
+=====
+- `sudo apt-get update && sudo apt-get upgrade --yes`
+- `git clone https://github.com/rocksteadytc/ooze`
+- `cd ooze/cryptonote/`
+- `git clone https://github.com/turtlecoin/turtlecoin . `
+- `cd ..`
+- `mkdir build && cd $_`
+- `cmake ..`
+- `make -j4`

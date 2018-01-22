@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HervaCoin Wallet
+Comment=HervaCoin wallet
+Exec=hervacoinwallet %U
+Terminal=false
+Type=Application
+Icon=turtlecoin
+MimeType=x-scheme-handler/turtlecoin;
+Categories=Office;Finance;
